@@ -13,8 +13,5 @@ export default defineConfig(() => ({
       '@': path.resolve(fileURLToPath(new URL('.', import.meta.url)), 'src'),
     },
   },
-  base:
-    process.env.VERCEL_ENV === 'production'
-      ? 'https://flow-machine-xyflow.vercel.app/'
-      : '/',
+  base: '/',
 }));
